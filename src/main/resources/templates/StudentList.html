@@ -28,7 +28,7 @@
         <tr th:each="${studentList}">
             <td th:text="${account.id}"></td>
             <td th:text="${account.name}"></td>
-            <td th:text="${account.money}"></td>
+            <td th:text="${.money}"></td>
 
             <td>
                 <a th:href = "@{/account+{id}(id=${account.id})}">修改</a>

@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/name")
+@RequestMapping("/account")
 public class StudentController {
 
     @Autowired(required = false)
@@ -53,7 +53,7 @@ public class StudentController {
         List<StudentBean> studentList = studentService.queryAllStudent();
         modelMap.addAttribute("studentList",studentList);
         if(flag == 1){
-            return "student";
+            return "account";
         }else {
             return "error";
         }
